@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_welcome_screen">
+
+    <fragment
+        android:id="@+id/nav_welcome_screen"
+        android:name="com.example.gdritzy.ui.home.WelcomeScreenFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_welcome_screen" />
+    <fragment
+        android:id="@+id/nav_sandwiches"
+        android:name="com.example.gdritzy.ui.sandwiches.SandwichesFragment"
+        tools:layout="@layout/fragment_sandwiches"
+        android:label="SandwichesFragment" />
+    <fragment
+        android:id="@+id/nav_salads"
+        android:name="com.example.gdritzy.ui.salads.SaladsFragment"
+        tools:layout="@layout/fragment_salads"
+        android:label="SaladsFragment" />
+    <fragment
+        android:id="@+id/nav_specialties"
+        android:name="com.example.gdritzy.ui.specialties.SpecialtiesFragment"
+        tools:layout="@layout/fragment_specialties"
+        android:label="SpecialtiesFragment" />
+    <fragment
+        android:id="@+id/nav_chili"
+        android:name="com.example.gdritzy.ui.chili.ChiliFragment"
+        tools:layout="@layout/fragment_chili"
+        android:label="ChiliFragment" />
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="com.example.gdritzy.ui.checkout.CheckoutScreenFragment"
+        tools:layout="@layout/fragment_checkout"
+        android:label="CheckoutFragment"/>
+
+    <fragment
+        android:id="@+id/nav_combos"
+        android:name="com.example.gdritzy.ui.combos.ComboFragment"
+        tools:layout="@layout/fragment_combo"
+        android:label="ComboFragment"/>
+    <fragment
+        android:id="@+id/nav_hotdogs"
+        android:name="com.example.gdritzy.ui.hotdogs.HotdogsFragment"
+        tools:layout="@layout/fragment_hotdog"
+        android:label="HotdogsFragment" />
+
+    <fragment
+        android:id="@+id/nav_condiments"
+        android:name="com.example.gdritzy.ui.condiments.CondimentsFragment"
+        tools:layout="@layout/fragment_condiments"
+        android:label="CondimentsFragment"/>
+
+    <fragment
+        android:id="@+id/nav_icecream"
+        android:name="com.example.gdritzy.ui.icecream.IceCreamFragment"
+        tools:layout="@layout/fragment_icecream"
+        android:label="IceCreamFragment"/>
+
+
+</navigation>

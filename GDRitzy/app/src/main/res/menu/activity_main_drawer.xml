@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_welcome_screen"
+            android:title="Welcome Screen" />
+        <item
+            android:id="@+id/nav_combos"
+            android:title="Combos" />
+        <item
+            android:id="@+id/nav_sandwiches"
+            android:title="Sandwiches" />
+        <item
+            android:id="@+id/nav_salads"
+            android:title="Salads" />
+        <item
+            android:id="@+id/nav_specialties"
+            android:title="Specialties" />
+        <item
+            android:id="@+id/nav_chili"
+            android:title="Chili" />
+        <item
+            android:id="@+id/nav_condiments"
+            android:title="Condiments" />
+        <item
+            android:id="@+id/nav_hotdogs"
+            android:title="Hotdogs" />
+        <item
+            android:id="@+id/nav_icecream"
+            android:title="Ice Cream" />
+        <item
+            android:id="@+id/nav_checkout"
+            android:title="Checkout" />
+
+
+    </group>
+</menu>
