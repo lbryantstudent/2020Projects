@@ -11,3 +11,6 @@ Updated password manager.
 Zach did password categories and passwordgen.
 Forche did the read/write and records.
 I did the login functionality and user accessors/mutators
+
+DEFAULT USERNAME FOR PASSWORD MANAGER IS "Squareguy" and the password is "mcmc"
+
