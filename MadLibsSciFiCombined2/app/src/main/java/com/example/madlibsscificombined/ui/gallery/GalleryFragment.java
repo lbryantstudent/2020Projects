@@ -18,6 +18,7 @@ import com.example.madlibsscificombined.R;
 
 public class GalleryFragment extends Fragment {
 
+    // defining a private shared variable with the other functions in this file.
     private GalleryViewModel galleryViewModel;
     private TextView mFirstName, mLastName, mCity, mSchool, mBrother, mSister, outText;
 
@@ -34,7 +35,7 @@ public class GalleryFragment extends Fragment {
             }
         });
 
-
+        // Defining the variables and getting them from the XML.
         mFirstName = (TextView) root.findViewById(R.id.txtFirstName);
         mLastName= (TextView) root.findViewById(R.id.txtLastName);
         mCity = (TextView) root.findViewById(R.id.txtCity);
@@ -46,6 +47,7 @@ public class GalleryFragment extends Fragment {
 
         btnSubmittal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                // Converting them to strings.
                 String first = mFirstName.getText().toString(); //getText just gets the info out of the TextView
                 String last = mLastName.getText().toString();
                 String city = mCity.getText().toString();
@@ -53,6 +55,7 @@ public class GalleryFragment extends Fragment {
                 String brother = mBrother.getText().toString();
                 String sister= mSister.getText().toString();
 
+                //Generating the random integers so we can randomize the output.
                 int rF = (int)(Math.random() * first.length());
                 int rL = (int)(Math.random() * last.length());
                 int rC = (int)(Math.random() * city.length());
@@ -61,11 +64,12 @@ public class GalleryFragment extends Fragment {
                 int rSi = (int)(Math.random() * sister.length());
 
 
+                // Getting sections of the strings so we can arrange them together.
                 String sciFiFirst = first.substring(0,rF) + last.substring(rL);
                 String sciFiLast = city.substring(0,rC) + school.substring(rS);
                 String sciFiHome = brother.substring(0,rB) + sister.substring(rSi);
 
-
+    //setting the final text
                 outText.setText("");
                 outText.append("Hola " + sciFiFirst + " of " + sciFiHome + " son of " + sciFiLast);
                 outText.append(" Welcome to the party!");

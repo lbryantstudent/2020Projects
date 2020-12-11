@@ -18,6 +18,7 @@ import com.example.madlibsscificombined.R;
 
 public class HomeFragment extends Fragment {
 
+    //    // defining a private shared variable with the other functions in this file.
     TextView mNounOne, mLocation, mVerbOne, mNounTwo, mNounRestar, mNounName, mPersonAge, mVerbTwo, mNounObj, mVerbThree, mNounWep, mNounBody, mAdjOne, mRelative, outText;
     private HomeViewModel homeViewModel;
 
@@ -35,6 +36,7 @@ public class HomeFragment extends Fragment {
         });
 
 
+        // Defining the variables and getting them from the XML.
 
         mNounOne = (TextView) root.findViewById(R.id.txtNounOne);
         mLocation = (TextView) root.findViewById(R.id.txtLocation);
@@ -56,6 +58,7 @@ public class HomeFragment extends Fragment {
 
         btnSubmit.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
+                // Converting them to strings.
                 String nounInputOne = mNounOne.getText().toString();
                 String location = mLocation.getText().toString();
                 String verbInputOne = mVerbOne.getText().toString();
@@ -75,7 +78,7 @@ public class HomeFragment extends Fragment {
                 //String sister= mSister.getText().toString();
 
 
-
+                //setting the final text
                 outText.setText("");
                 outText.append("A " + nounInputOne + " in " + location + " was arrested this morning after they " + verbInputOne + " a ");
                 outText.append(nounInputTwo + " in front of " + restaurant + ". " + nounInputName + ", " + personAge + ", had a history of ");
