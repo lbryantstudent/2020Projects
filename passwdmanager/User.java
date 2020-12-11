@@ -6,7 +6,7 @@ public class User{
     private String password;
     private String firstName;
     private String lastName;
-    private ArrayList<String> passwordList = new ArrayList<String>();
+    private static ArrayList<String> passwordList = new ArrayList<String>();
 
 
     public User(String username, String password, String firstName, String lastName, ArrayList<String> passwords) {
@@ -36,7 +36,7 @@ public class User{
     }
     
     public String getPasswordList() {
-        String blah;
+        String blah = "";
         for (String i : this.passwordList) {
             blah += i;
         }
@@ -44,8 +44,8 @@ public class User{
     }
     
 
-    public void createPassword(String passwordGen) {
-        this.passwordList.add(passwordGen);
+    public static void createPassword(String passwordGen) {
+        passwordList.add(passwordGen);
     }
 
     public void modifyPassword(int passwordIndex, String newPass) {
