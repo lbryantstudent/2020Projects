@@ -32,6 +32,6 @@ public class Library {
 
     public void createNewPassword(String category, String password){
         PasswordRecord tempPassword = new PasswordRecord(category, password);
-        OpenCloseFile.writeString(tempPassword.getCategory()+" "+tempPassword.getPassword()+"\n");
+        OpenCloseFile.writeString(User.getUser()+" "+tempPassword.getCategory()+" "+tempPassword.getPassword()+"\n");
     }
 }

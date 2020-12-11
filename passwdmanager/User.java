@@ -36,10 +36,11 @@ public class User{
     }
     
     public String getPasswordList() {
+        String blah;
         for (String i : this.passwordList) {
-            return i;
+            blah += i;
         }
-        return "";
+        return blah;
     }
     
 
